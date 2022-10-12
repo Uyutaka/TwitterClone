@@ -18,6 +18,7 @@
 		76C6F3A828F6A05300DE8012 /* NotificatinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3A728F6A05300DE8012 /* NotificatinsView.swift */; };
 		76C6F3AA28F6A06900DE8012 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3A928F6A06900DE8012 /* MessagesView.swift */; };
 		76C6F3AE28F6A35D00DE8012 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3AD28F6A35D00DE8012 /* ProfileView.swift */; };
+		76C6F3B028F6AB8B00DE8012 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3AF28F6AB8B00DE8012 /* TweetFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		76C6F3A728F6A05300DE8012 /* NotificatinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatinsView.swift; sourceTree = "<group>"; };
 		76C6F3A928F6A06900DE8012 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		76C6F3AD28F6A35D00DE8012 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		76C6F3AF28F6AB8B00DE8012 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		76C6F3AB28F6A19500DE8012 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				76C6F3AF28F6AB8B00DE8012 /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				76C6F3AE28F6A35D00DE8012 /* ProfileView.swift in Sources */,
 				76C6F38628F695DD00DE8012 /* ContentView.swift in Sources */,
 				76C6F39D28F698F200DE8012 /* TweetRowView.swift in Sources */,
+				76C6F3B028F6AB8B00DE8012 /* TweetFilterViewModel.swift in Sources */,
 				76C6F39A28F697AC00DE8012 /* FeedView.swift in Sources */,
 				76C6F3A828F6A05300DE8012 /* NotificatinsView.swift in Sources */,
 				76C6F38428F695DD00DE8012 /* TwitterCloneApp.swift in Sources */,
