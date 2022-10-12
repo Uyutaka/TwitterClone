@@ -14,7 +14,8 @@ struct FeedView: View {
             LazyVStack{
                 ForEach(0...20, id: \.self){
                     _ in
-                    Text("Tweet Row View")
+                    TweetRowView()
+                        .padding()
                 }
             }
         }
