@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             headerView
+            
             actionButtons
+            
+            userInfoDetails
             
             Spacer()
         }
@@ -67,4 +70,58 @@ extension ProfileView {
         }
         .padding(.trailing)
     }
+    
+    var userInfoDetails: some View{
+        VStack(alignment: .leading, spacing: 4){
+            HStack{
+                Text("Heath Ledger")
+                    .font(.title2).bold()
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundColor(Color(.systemBlue))
+            }
+            
+            Text("@joker")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            Text("Your moms favorite villain")
+                .font(.subheadline)
+                .padding(.vertical)
+            HStack(spacing: 24){
+                HStack{
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Gotham, NY")
+                }
+                HStack{
+                    Image(systemName: "link")
+                    Text("www.thejoker.com")
+                }
+            }
+            .font(.caption)
+            .foregroundColor(.gray)
+            
+            HStack(spacing: 24){
+                HStack(spacing: 4){
+                    Text("867")
+                        .font(.subheadline)
+                        .bold()
+
+                    Text("Following")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+                HStack(spacing: 4){
+                    Text("6.7M")
+                        .font(.subheadline)
+                        .bold()
+
+                    Text("Followers")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+            }
+            .padding(.vertical)
+        }
+        .padding(.horizontal)
+    }
+
 }
