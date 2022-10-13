@@ -12,6 +12,7 @@
 		7663ED3328F79FEE00E91E27 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3228F79FEE00E91E27 /* SideMenuRowView.swift */; };
 		7663ED3528F7A00A00E91E27 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3428F7A00A00E91E27 /* SideMenuViewModel.swift */; };
 		7663ED3728F7A24400E91E27 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3628F7A24400E91E27 /* UserStatsView.swift */; };
+		7663ED3928F7AB1400E91E27 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3828F7AB1400E91E27 /* SideMenuOptionRowView.swift */; };
 		76C6F38428F695DD00DE8012 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F38328F695DD00DE8012 /* TwitterCloneApp.swift */; };
 		76C6F38628F695DD00DE8012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F38528F695DD00DE8012 /* ContentView.swift */; };
 		76C6F38828F695DE00DE8012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C6F38728F695DE00DE8012 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		7663ED3228F79FEE00E91E27 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		7663ED3428F7A00A00E91E27 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		7663ED3628F7A24400E91E27 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		7663ED3828F7AB1400E91E27 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		76C6F38028F695DD00DE8012 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C6F38328F695DD00DE8012 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		76C6F38528F695DD00DE8012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				7663ED3028F79FC800E91E27 /* SideMenuView.swift */,
 				7663ED3228F79FEE00E91E27 /* SideMenuRowView.swift */,
+				7663ED3828F7AB1400E91E27 /* SideMenuOptionRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				76C6F38428F695DD00DE8012 /* TwitterCloneApp.swift in Sources */,
 				7663ED3528F7A00A00E91E27 /* SideMenuViewModel.swift in Sources */,
 				7663ED2C28F79B1800E91E27 /* UserRowView.swift in Sources */,
+				7663ED3928F7AB1400E91E27 /* SideMenuOptionRowView.swift in Sources */,
 				76C6F3A628F6A02F00DE8012 /* ExploreView.swift in Sources */,
 				76C6F3A028F69EA800DE8012 /* MainTabView.swift in Sources */,
 				7663ED3728F7A24400E91E27 /* UserStatsView.swift in Sources */,
