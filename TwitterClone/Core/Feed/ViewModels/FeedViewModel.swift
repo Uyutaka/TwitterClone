@@ -26,7 +26,6 @@ class FeedViewModel: ObservableObject {
                     self.tweets[i].user = user
                 }
             }
-        
         }
     }
 }
