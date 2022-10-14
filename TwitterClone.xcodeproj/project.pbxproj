@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7660B02C28F8ECDE005E4C46 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660B02B28F8ECDE005E4C46 /* ProfilePhotoSelectorView.swift */; };
+		7660B02F28F8F378005E4C46 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660B02E28F8F378005E4C46 /* ImagePicker.swift */; };
 		7663ED2C28F79B1800E91E27 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED2B28F79B1800E91E27 /* UserRowView.swift */; };
 		7663ED3128F79FC800E91E27 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3028F79FC800E91E27 /* SideMenuView.swift */; };
 		7663ED3328F79FEE00E91E27 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663ED3228F79FEE00E91E27 /* SideMenuRowView.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7660B02B28F8ECDE005E4C46 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		7660B02E28F8F378005E4C46 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7663ED2B28F79B1800E91E27 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		7663ED3028F79FC800E91E27 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		7663ED3228F79FEE00E91E27 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7660B02D28F8F35B005E4C46 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7660B02E28F8F378005E4C46 /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		7663ED2828F79ABD00E91E27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 			children = (
 				7663ED4428F7D6F600E91E27 /* LoginView.swift */,
 				7663ED4628F7D72300E91E27 /* RegistrationView.swift */,
+				7660B02B28F8ECDE005E4C46 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 		76C6F38228F695DD00DE8012 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				7660B02D28F8F35B005E4C46 /* Utils */,
 				76BC0FDF28F7E8B8009F6076 /* GoogleService-Info.plist */,
 				76C6F39428F6966C00DE8012 /* Model */,
 				76C6F39328F6966800DE8012 /* Extensions */,
@@ -471,7 +485,9 @@
 				7663ED3128F79FC800E91E27 /* SideMenuView.swift in Sources */,
 				76C6F3A828F6A05300DE8012 /* NotificatinsView.swift in Sources */,
 				7663ED3E28F7D0A700E91E27 /* NewTweetView.swift in Sources */,
+				7660B02F28F8F378005E4C46 /* ImagePicker.swift in Sources */,
 				76C6F38428F695DD00DE8012 /* TwitterCloneApp.swift in Sources */,
+				7660B02C28F8ECDE005E4C46 /* ProfilePhotoSelectorView.swift in Sources */,
 				7663ED3528F7A00A00E91E27 /* SideMenuViewModel.swift in Sources */,
 				7663ED2C28F79B1800E91E27 /* UserRowView.swift in Sources */,
 				7663ED4928F7D8B000E91E27 /* RoundedShape.swift in Sources */,

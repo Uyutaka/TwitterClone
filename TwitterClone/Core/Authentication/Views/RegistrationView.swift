@@ -18,6 +18,9 @@ struct RegistrationView: View {
     var body: some View {
         // parent container
         VStack{
+            NavigationLink(destination: ProfilePhotoSelectorView(),
+                           isActive: $viewModel.didAuthenticationUser,
+                           label: {})
             AuthHeaderView(title1: "Get started", title2: "Create your account")
             Spacer()
             
