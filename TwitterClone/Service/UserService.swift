@@ -10,7 +10,6 @@ import FirebaseFirestoreSwift
 
 struct UserService{
     func fetchUser(withUid uid: String, completion: @escaping(User) -> Void){
-        print("DEBUG: Fetch user info..")
         Firestore.firestore().collection("users")
             .document(uid)
             .getDocument{ snapshot, _ in
@@ -18,5 +17,23 @@ struct UserService{
                 guard let user = try? snapshot.data(as: User.self) else { return }
                 completion(user)
             }
+    }
+    
+    func fetchUsers(completion: @escaping([User]) -> Void){
+        var users = [User]()
+        Firestore.firestore().collection("users")
+            .getDocuments{ snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                
+                documents.forEach{ document in
+                    guard let user = try? document.data(as: User.self) else { return }
+                    users.append(user)
+                }
+                // Refector code for documents.forEach(.....
+                // let users = documents.compactMap({try? $0.data(as: User.self)})
+
+                completion(users)
+            }
+        
     }
 }
