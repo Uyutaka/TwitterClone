@@ -9,11 +9,15 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileView: View {
+    @State private var showWebView = false
     @State private var selectionFilter: TweetFilterViewModel = .tweets
+    // TODO: Delete action, move it to WebViewModel
+    @State private var action: WebView.Action = .none
     @Environment(\.presentationMode) var mode
     @Namespace var animation
     @ObservedObject var viewModel: ProfileViewModel
-    
+    @ObservedObject var webViewModel = WebViewModel()
+
     // DI
     init(user: User){
         self.viewModel = ProfileViewModel(user: user)
@@ -116,7 +120,22 @@ extension ProfileView {
                 }
                 HStack{
                     Image(systemName: "link")
-                    Text("www.thejoker.com")
+                    Button{
+                        showWebView.toggle()
+                    } label: {
+                        Text("link")
+                    }
+                    .fullScreenCover(isPresented: $showWebView){
+                        if webViewModel.isLoading{
+                            Text("Loading...")
+                        }else{
+                            Text(webViewModel.title)
+                        }
+                        WebView(url: "https://www.apple.com/",  action: $action)
+                        .environmentObject(webViewModel)
+                        WebToolBarView(action: $action)
+                            .environmentObject(webViewModel)
+                    }
                 }
             }
             .font(.caption)
