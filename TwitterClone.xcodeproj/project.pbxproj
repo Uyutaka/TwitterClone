@@ -56,6 +56,9 @@
 		76C6F3AA28F6A06900DE8012 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3A928F6A06900DE8012 /* MessagesView.swift */; };
 		76C6F3AE28F6A35D00DE8012 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3AD28F6A35D00DE8012 /* ProfileView.swift */; };
 		76C6F3B028F6AB8B00DE8012 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6F3AF28F6AB8B00DE8012 /* TweetFilterViewModel.swift */; };
+		76FC3ADB28FAA90200180846 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC3ADA28FAA90200180846 /* WebView.swift */; };
+		76FC3ADF28FAAE6A00180846 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC3ADE28FAAE6A00180846 /* WebViewModel.swift */; };
+		76FC3AE128FAB56600180846 /* WebToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC3AE028FAB56600180846 /* WebToolBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +104,9 @@
 		76C6F3A928F6A06900DE8012 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		76C6F3AD28F6A35D00DE8012 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		76C6F3AF28F6AB8B00DE8012 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
+		76FC3ADA28FAA90200180846 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		76FC3ADE28FAAE6A00180846 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		76FC3AE028FAB56600180846 /* WebToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +353,7 @@
 		76C6F39528F6974800DE8012 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				76FC3AD928FAA8EF00180846 /* Web */,
 				7663ED4C28F7DF1E00E91E27 /* Authentication */,
 				7663ED2A28F79AF500E91E27 /* Users */,
 				76C6F39B28F698AB00DE8012 /* Tweets */,
@@ -451,6 +458,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		76FC3AD928FAA8EF00180846 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				76FC3ADD28FAAE5300180846 /* Views */,
+				76FC3ADC28FAAE4A00180846 /* ViewModel */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		76FC3ADC28FAAE4A00180846 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76FC3ADE28FAAE6A00180846 /* WebViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76FC3ADD28FAAE5300180846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76FC3ADA28FAA90200180846 /* WebView.swift */,
+				76FC3AE028FAB56600180846 /* WebToolBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,6 +574,7 @@
 				7660B03C28F913CB005E4C46 /* UserService.swift in Sources */,
 				76C6F3AA28F6A06900DE8012 /* MessagesView.swift in Sources */,
 				76C6F3AE28F6A35D00DE8012 /* ProfileView.swift in Sources */,
+				76FC3AE128FAB56600180846 /* WebToolBarView.swift in Sources */,
 				76C6F38628F695DD00DE8012 /* ContentView.swift in Sources */,
 				7663ED3328F79FEE00E91E27 /* SideMenuRowView.swift in Sources */,
 				7663ED4E28F7DF3C00E91E27 /* AuthHeaderView.swift in Sources */,
@@ -551,6 +585,8 @@
 				76C6F3B028F6AB8B00DE8012 /* TweetFilterViewModel.swift in Sources */,
 				7660B05428F95ED6005E4C46 /* TweetRowViewModel.swift in Sources */,
 				7660B03F28F9161A005E4C46 /* User.swift in Sources */,
+				76FC3ADF28FAAE6A00180846 /* WebViewModel.swift in Sources */,
+				76FC3ADB28FAA90200180846 /* WebView.swift in Sources */,
 				7663ED4B28F7DCCF00E91E27 /* CustomInputField.swift in Sources */,
 				76C6F39A28F697AC00DE8012 /* FeedView.swift in Sources */,
 				7660B04A28F93FE0005E4C46 /* UploadTweetViewModel.swift in Sources */,
