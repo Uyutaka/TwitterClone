@@ -5,3 +5,4 @@ tutorial](https://www.youtube.com/watch?v=3pIXMwvJLZs)
 - Swift
 - SwiftUI
 - Firebase Authentication
+- Cloud Firestore
